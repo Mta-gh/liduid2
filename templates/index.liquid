@@ -1,13 +1,2 @@
-{% assign collection = collections['featured-collection'] %}
-{{ collection.title }}
-
-<ul>
-  {% for product in collection.products %}
-    <li>
-      <a href="{{ product.url }}">{{ product.title }} - {{ product.price | money }}</a>
-      {% unless product.available %}
-        (SOLD OUT)
-      {% endunless %}
-    </li>
-  {% endfor %}
-</ul>
+{% section "header" %}
+{% section "random-collection" %}

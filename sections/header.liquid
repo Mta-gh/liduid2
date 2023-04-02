@@ -1,0 +1,14 @@
+{% assign collection = collections['header'] %}
+<link
+  rel="stylesheet"
+  href="{{ 'styles.css' | asset_url }}"
+  media="print"
+  onload="this.media='all'">
+<h1>Knock knock Neo</h1>
+
+{% schema %}
+  {
+    "name": "Section name",
+    "settings": []
+  }
+{% endschema %}
